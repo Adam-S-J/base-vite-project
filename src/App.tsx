@@ -1,8 +1,19 @@
+import { Route, Routes } from 'react-router-dom';
+import Layout from './Layouts/BaseLayout';
+import Home from './pages/Home';
+import About from './pages/About';
+
 const App = (): JSX.Element => {
   return (
     <>
-      <p>Test</p>
-      <p className="underline">Underline Test</p>
+      <Layout>
+        <div className="flex justify-center p-10 bg-blue-200">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
+      </Layout>
     </>
   );
 };
