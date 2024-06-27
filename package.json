@@ -9,7 +9,7 @@
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
     "preview": "vite preview",
     "prepare": "husky",
-    "test": "vitest",
+    "test": "vitest run",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
